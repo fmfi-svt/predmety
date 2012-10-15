@@ -1,0 +1,6 @@
+*.py[co]
+.*
+!.git*
+*~
+/*env
+local_settings.py

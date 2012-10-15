@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="sk">
+    <title>{{ head_title|default(title) }} &mdash; Predmety</title>
+    <link rel="stylesheet" type="text/css" href="{{ static_url }}main.css">
+    <link rel="shortcut icon" href="{{ static_url }}favicon.ico">
+    {{ head_extra }}
+</head>
+<body>
+{% if raw_body %}
+    {{ raw_body }}
+{% else %}
+    <div class="title">
+        <h1>Predmety</h1>
+        <h2>{{ title }}</h2>
+    </div>
+    <div class="content">
+        {{ body }}
+    </div>
+    <div class="footer">
+        &copy; <a href="http://svt.fmph.uniba.sk/">Študentský Vývojový Tím</a> 2011, 2012
+    </div>
+{% endif %}
+</body>
+</html>

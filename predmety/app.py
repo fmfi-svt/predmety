@@ -9,10 +9,10 @@ from werkzeug.routing import Map, BaseConverter
 from werkzeug.exceptions import HTTPException, NotFound
 import jinja2
 from sqlalchemy.orm import sessionmaker
-from . import models, util
+from . import models
 
-from . import front
-site_modules = [front]
+from . import front, go
+site_modules = [front, go]
 
 class PredmetyApp(object):
     def __init__(self, settings):
